@@ -1,11 +1,11 @@
-FROM openjdk:17-jdk-alpine
+FROM openjdk:21-jdk-alpine
 
 WORKDIR /usr/src/app
  
-COPY app.java .
+COPY App.java .
 
-RUN javac app.java
+RUN javac App.java
 
-CMD ["java", "app"]
+CMD ["java", "App"]
  
 
